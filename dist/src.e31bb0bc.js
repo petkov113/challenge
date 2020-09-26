@@ -117,7 +117,7 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+})({"../../../AppData/Roaming/npm/node_modules/parcel/src/builtins/bundle-url.js":[function(require,module,exports) {
 var bundleURL = null;
 
 function getBundleURLCached() {
@@ -149,7 +149,7 @@ function getBaseURL(url) {
 
 exports.getBundleURL = getBundleURLCached;
 exports.getBaseURL = getBaseURL;
-},{}],"../node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+},{}],"../../../AppData/Roaming/npm/node_modules/parcel/src/builtins/css-loader.js":[function(require,module,exports) {
 var bundle = require('./bundle-url');
 
 function updateLink(link) {
@@ -184,12 +184,12 @@ function reloadCSS() {
 }
 
 module.exports = reloadCSS;
-},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"styles.scss":[function(require,module,exports) {
+},{"./bundle-url":"../../../AppData/Roaming/npm/node_modules/parcel/src/builtins/bundle-url.js"}],"styles.scss":[function(require,module,exports) {
 var reloadCSS = require('_css_loader');
 
 module.hot.dispose(reloadCSS);
 module.hot.accept(reloadCSS);
-},{"./assets\\images\\bg-intro-desktop.svg":[["bg-intro-desktop.04ff1650.svg","assets/images/bg-intro-desktop.svg"],"assets/images/bg-intro-desktop.svg"],"./assets\\images\\bg-intro-mobile.svg":[["bg-intro-mobile.d8e8373f.svg","assets/images/bg-intro-mobile.svg"],"assets/images/bg-intro-mobile.svg"],"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
+},{"./assets\\images\\bg-intro-desktop.svg":[["bg-intro-desktop.04ff1650.svg","assets/images/bg-intro-desktop.svg"],"assets/images/bg-intro-desktop.svg"],"./assets\\images\\bg-intro-mobile.svg":[["bg-intro-mobile.d8e8373f.svg","assets/images/bg-intro-mobile.svg"],"assets/images/bg-intro-mobile.svg"],"_css_loader":"../../../AppData/Roaming/npm/node_modules/parcel/src/builtins/css-loader.js"}],"index.js":[function(require,module,exports) {
 "use strict";
 
 require("./styles.scss");
@@ -238,7 +238,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "62669" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60525" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
